@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Grey Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"> </script>
+
+  </head>
+
+  
+    <body>
+
+      
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GREY</label>
+          
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="foryou.html">For You</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="posts.html">My Posts</a></li>
+          
+        </ul>
+
+      </nav>
+    </body>
+
+    <body> 
+    <section>
+      <div class="bg.image"></div>
+      <div class="bg.text">
+      <div class="container reveal">
+        <h1>Blogs</h1>
+        <h1 style="color:black;">
+        </h1> 
+      </div>
+
+    </section>
+    
+    <section >
+      <div class="container reveal">
+            <h2>SHARE YOUR THOUGHTS 
+            </h2>
+            <p>There is no joy in possession without sharing...
+            </p>
+      </div>
+    </section>
+    <section >
+      <div class="container reveal">
+
+          <h2></h2>
+          <div class="cards">
+
+            <div class="text-cards">
+              <h3>EXPLORE</h3>
+              <p>What's on my bucket list?
+                 Everywhere!!!!! 
+              </p>
+            </div>
+
+          </div>
+
+      </div>
+  </section>
+  <section >
+    <div class="container reveal">
+      <div class="cards">
+        <div class="text-cards">
+          <h3>TECHNOLOGY</h3>
+          <p>Change the world with technology</p>
+        </div>
+      </div> 
+   </div>
+ </section>
+ <section >
+  <div class="container reveal">
+    <div class="cards">
+      <div class="text-cards">
+        <h3>Join millions of others</h3>
+        <p>Bonds form.Hearts </p>
+      </div>
+    </div> 
+ </div>
+</section>
+
+
+ <script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+    
+    var reveals = document.querySelectorAll('.reveal');
+   
+    for (var i=0 ; i< reveals.length; i++)
+    {
+      
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+      
+       if(revealtop < windowheight - revealpoint)
+       {
+        reveals[i].classList.add('active');
+       }
+       else
+       {
+        reveals[i].classList.remove('active');
+       }
+
+      }
+    }
+
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("check");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+
+   </script>
+
+
+
+  </body>
+
+<body style="background-color:#060613;">
+ <!--<div class="parent">
+   <div class="child"></div>
+  </div>-->
+</body>
+
+    </html>

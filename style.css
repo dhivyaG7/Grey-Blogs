@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+ body{
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+   }
+
+  section{
+     min-height: 94vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  
+
+  section:nth-child(2){
+    color: rgb(13, 13, 14);
+    justify-content:space-evenly;
+    
+  }
+
+   section:nth-child(3){
+    color: #000000;
+    justify-content: 100px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/food-blog-photography.jpg?v=1649269235") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }
+
+  section:nth-child(4){
+        
+    color: rgb(7, 7, 7);
+    justify-content: left;
+    background-image: url("https://www.universalsompo.com/OverseasTravel/Content/Home/Images/bg1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    
+  }
+  
+  section:nth-child(5){
+    color: #fcfcfc;
+    background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80");
+    justify-content: left;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+   }
+   
+   section:nth-child(6){
+        
+    color: rgb(0, 0, 0);
+    justify-content: left;
+    background-image: url("https://thebuzzie.com/wp-content/uploads/2021/07/Social-Media-usage-Statistics-around-the-world.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+  }
+
+
+
+   section .container{
+    margin: 160px;
+   }
+   section h1{
+     font-size: 98px;
+     text-transform: uppercase;
+   }
+   section h2{
+     font-size: 40px;
+     text-transform: uppercase;
+   }
+   section h3{
+    font-size: 40px;
+  }
+  section p{
+    font-size: 25px;
+  }
+
+  
+section .cards{
+  display: flex;
+}
+
+
+
+  @media (max-width: 900px){
+    section h1{
+      font-size: 60px;
+    }
+    section h2{
+        font-size: 45px;
+      }
+      section h3{
+        font-size: 35px;
+      }
+      section p{
+        font-size: 50px;
+      }
+      
+   section .container{
+    margin: 100px;
+   }
+       section{
+     min-height: 94vh;
+     display: flex;
+     }
+    }
+
+    
+
+
+    .reveal{
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+    
+    .reveal.active{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+
+
+
+
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body{
+      font-family:Cambria;
+    }
+   
+    nav{
+      background: #040404 ;
+      position: sticky;
+      height: 80px;
+      width: 100%;
+    }
+
+    label.logo{
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    a.active,a:hover{
+      background: #000000;
+      transition: .5s;
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+    @media (max-width: 952px){
+      label.logo{
+        font-size: 30px;
+        position: sticky;
+        overflow: hidden;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+        position: sticky;
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 858px){
+      .checkbtn{
+        display: block;
+        position: sticky;
+        overflow: hidden;
+      }
+      ul{
+        list-style-type: none;
+        position: sticky;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        position: sticky;
+        overflow: hidden;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+        position: sticky;
+        overflow: hidden;
+      }
+      a:hover,a.active{
+        background: none;
+        position: sticky;
+        overflow: hidden;
+        color: #164459 ;
+      }
+      #check:checked ~ ul{
+        left: 0;
+        position: sticky;
+        overflow: hidden;
+      }
+    }
+
+
+
+
+
+
+
+    .bg-image {
+      background-image: url("me.jpg");
+      filter: blur(8px);
+      height: 100%;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+    }
+    
+ 
+
+
+
+
+  
+
+
+  
