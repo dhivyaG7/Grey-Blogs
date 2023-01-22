@@ -27,6 +27,7 @@
           <li><a href="foryou.html">For You</a></li>
           <li><a href="blogs.html">New Post</a></li>
           <li><a href="posts.html">My Posts</a></li>
+          <li><a href="#" onclick="signOut();">Sign out</a></li>
           
         </ul>
 
@@ -135,7 +136,12 @@
           navbar.classList.remove("sticky");
         }
       }
-
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
 
    </script>
 
