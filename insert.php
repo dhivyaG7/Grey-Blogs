@@ -37,3 +37,41 @@
     mysqli_close($con);
 
 ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Grey Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"> </script>
+
+  </head>
+
+  
+    <body>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GREY</label>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="active" href="fu.html">For You</a></li>
+          <li><a href="blogs.html">New Post</a></li>
+          <li><a href="posts.html">My Posts</a></li>
+          
+
+        </ul>
+      </nav>
+
+
+      <?php echo $_POST["title"]; ?><br>
+    Your email address is: <?php echo $_POST["content"]; ?>
+
+    </body>
+
+    </html> 
